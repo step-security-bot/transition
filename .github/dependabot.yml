@@ -1,0 +1,51 @@
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /packages/chaire-lib-backend
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /packages/chaire-lib-common
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /packages/chaire-lib-frontend
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /packages/transition-backend
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /packages/transition-common
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /packages/transition-frontend
+    schedule:
+      interval: daily
+
+  - package-ecosystem: cargo
+    directory: /services/json2capnp
+    schedule:
+      interval: daily
